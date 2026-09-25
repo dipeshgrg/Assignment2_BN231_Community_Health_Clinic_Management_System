@@ -14,7 +14,9 @@ public class AppointmentController {
     }
 
     public void scheduleAppointment(Appointment appointment) {
-        appointments.add(appointment);
+        if (appointment != null) {
+            appointments.add(appointment);
+        }
     }
 
     public List<Appointment> getAppointments() {
